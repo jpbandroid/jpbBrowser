@@ -60,9 +60,9 @@ internal class ChromeClient(
         }
 
         try {
-            getContent.launch(params.acceptTypes.map {
+            getContent.launch(arrayOf(params.acceptTypes.map {
                 MimeTypeMap.getSingleton().getMimeTypeFromExtension(it)
-            }.toTypedArray())
+            }.toTypedArray().toString()))
         } catch (e: ActivityNotFoundException) {
             Toast.makeText(mActivity, mActivity.getString(R.string.error_no_activity_found),
                     Toast.LENGTH_LONG).show()

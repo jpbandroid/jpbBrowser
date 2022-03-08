@@ -122,8 +122,8 @@ object UiUtils {
     }
 
     fun isReachModeEnabled(context: Context?): Boolean {
-        val prefs = PreferenceManager.getDefaultSharedPreferences(context)
-        return prefs.getBoolean("key_reach_mode", false)
+        val prefs = context?.let { PreferenceManager.getDefaultSharedPreferences(it) }
+        return prefs!!.getBoolean("key_reach_mode", false)
     }
 
     fun getDimenAttr(context: Context, @StyleRes style: Int, @AttrRes dimen: Int): Float {

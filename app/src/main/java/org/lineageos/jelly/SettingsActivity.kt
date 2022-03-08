@@ -48,20 +48,22 @@ class SettingsActivity : AppCompatActivity() {
             bindPreferenceSummaryToValue(findPreference("key_home_page"),
                     getString(R.string.default_home_page))
             if (resources.getBoolean(R.bool.is_tablet)) {
-                preferenceScreen.removePreference(findPreference("key_reach_mode"))
+                preferenceScreen.removePreference(findPreference("key_reach_mode")!!)
             }
         }
 
         private fun bindPreferenceSummaryToValue(preference: Preference?, def: String) {
             preference?.onPreferenceChangeListener = this
 
-            onPreferenceChange(preference,
+            if (preference != null) {
+                onPreferenceChange(preference,
                     PreferenceManager
-                            .getDefaultSharedPreferences(preference?.context)
-                            .getString(preference?.key, def))
+                        .getDefaultSharedPreferences(preference.context)
+                        .getString(preference.key, def))
+            }
         }
 
-        override fun onPreferenceChange(preference: Preference?, value: Any?): Boolean {
+        override fun onPreferenceChange(preference: Preference, value: Any?): Boolean {
             val stringValue = value.toString()
 
             if (preference is ListPreference) {
@@ -123,5 +125,7 @@ class SettingsActivity : AppCompatActivity() {
                     .setNegativeButton(android.R.string.cancel, null)
                     .show()
         }
+
+
     }
 }
