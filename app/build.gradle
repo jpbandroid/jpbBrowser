@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-id 'com.google.android.gms.oss-licenses-plugin'
-id 'com.mikepenz.aboutlibraries.plugin'
+apply plugin:'com.google.android.gms.oss-licenses-plugin'
+apply plugin: 'com.mikepenz.aboutlibraries.plugin'
 
 android {
     compileSdkVersion 32
