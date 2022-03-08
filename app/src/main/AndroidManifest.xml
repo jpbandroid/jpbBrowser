@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jpb.jelly">
+    package="com.jpb.browser">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -94,7 +94,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.jpb.jelly.fileprovider"
+            android:authorities="com.jpb.browser.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -104,12 +104,12 @@
 
         <provider
             android:name="com.jpb.browser.favorite.FavoriteProvider"
-            android:authorities="com.jpb.jelly.favorite"
+            android:authorities="com.jpb.browser.favorite"
             android:exported="false" />
 
         <provider
             android:name="com.jpb.browser.history.HistoryProvider"
-            android:authorities="com.jpb.jelly.history"
+            android:authorities="com.jpb.browser.history"
             android:exported="false" />
 
         <meta-data
