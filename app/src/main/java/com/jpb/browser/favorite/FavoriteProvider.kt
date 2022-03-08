@@ -165,7 +165,7 @@ class FavoriteProvider : ContentProvider() {
 
     interface Columns : BaseColumns {
         companion object {
-            const val AUTHORITY = "com.jpb.jelly.favorite"
+            const val AUTHORITY = "com.jpb.browser.favorite"
             val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/favorite")
             const val TITLE = "title"
             const val URL = "url"

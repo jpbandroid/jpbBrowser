@@ -27,7 +27,7 @@ import android.widget.BaseAdapter
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.TextView
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import com.jpb.browser.utils.PrefsUtils
 import com.jpb.browser.utils.PrefsUtils.SuggestionProviderType
 import java.util.*

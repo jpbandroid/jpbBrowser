@@ -17,7 +17,7 @@ package com.jpb.browser.utils
 
 import android.content.Context
 import androidx.preference.PreferenceManager
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 object PrefsUtils {
     private const val KEY_SEARCH_ENGINE = "key_search_engine"

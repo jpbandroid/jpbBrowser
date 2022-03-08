@@ -160,7 +160,7 @@ class HistoryProvider : ContentProvider() {
 
     interface Columns : BaseColumns {
         companion object {
-            const val AUTHORITY = "com.jpb.jelly.history"
+            const val AUTHORITY = "com.jpb.browser.history"
             val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/history")
             const val TITLE = "title"
             const val URL = "url"

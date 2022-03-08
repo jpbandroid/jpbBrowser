@@ -21,7 +21,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.annotation.StringRes
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 class KeyValueView @JvmOverloads constructor(
         context: Context,

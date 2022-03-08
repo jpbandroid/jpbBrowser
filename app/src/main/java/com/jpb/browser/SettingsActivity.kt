@@ -29,7 +29,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
 import com.jpb.browser.utils.PrefsUtils
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -41,7 +41,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import com.jpb.browser.history.HistoryCallBack.OnDeleteListener
 import com.jpb.browser.utils.UiUtils
 

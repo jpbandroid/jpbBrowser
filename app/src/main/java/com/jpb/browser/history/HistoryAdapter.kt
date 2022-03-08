@@ -21,7 +21,7 @@ import android.provider.BaseColumns
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*

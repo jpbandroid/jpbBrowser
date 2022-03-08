@@ -26,7 +26,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.jpb.browser.MainActivity
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import com.jpb.browser.utils.UiUtils
 
 class HistoryHolder(view: View) : RecyclerView.ViewHolder(view) {

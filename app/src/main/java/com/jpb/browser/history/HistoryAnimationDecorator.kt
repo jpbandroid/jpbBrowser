@@ -23,7 +23,7 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 internal class HistoryAnimationDecorator(context: Context?) : ItemDecoration() {
     private val mBackground: Drawable

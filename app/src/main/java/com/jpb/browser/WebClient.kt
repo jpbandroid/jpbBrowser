@@ -35,7 +35,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.snackbar.Snackbar
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import com.jpb.browser.ui.UrlBarController
 import com.jpb.browser.utils.IntentUtils
 import com.jpb.browser.utils.UrlUtils

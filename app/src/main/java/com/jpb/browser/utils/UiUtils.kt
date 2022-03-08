@@ -27,7 +27,7 @@ import androidx.annotation.StyleRes
 import androidx.core.graphics.ColorUtils
 import androidx.palette.graphics.Palette
 import androidx.preference.PreferenceManager
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 object UiUtils {
     fun isColorLight(color: Int): Boolean {

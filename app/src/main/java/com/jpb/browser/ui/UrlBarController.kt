@@ -26,7 +26,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import java.text.DateFormat
 
 class UrlBarController(

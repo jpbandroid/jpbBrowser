@@ -21,7 +21,7 @@ import android.provider.BaseColumns
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 class FavoriteAdapter(private val mContext: Context) : RecyclerView.Adapter<FavoriteHolder>() {
     private var mCursor: Cursor? = null

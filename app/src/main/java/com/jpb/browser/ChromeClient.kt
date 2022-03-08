@@ -24,7 +24,7 @@ import android.webkit.*
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts.OpenMultipleDocuments
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import com.jpb.browser.history.HistoryProvider
 import com.jpb.browser.ui.UrlBarController
 import com.jpb.browser.utils.TabUtils.openInNewTab

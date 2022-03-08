@@ -26,7 +26,7 @@ import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.jpb.jelly.R
+import com.jpb.browser.R
 
 class HistoryCallBack(context: Context, deleteListener: OnDeleteListener?) :
         ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {

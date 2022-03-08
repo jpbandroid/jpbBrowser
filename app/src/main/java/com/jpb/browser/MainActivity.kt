@@ -59,7 +59,7 @@ import androidx.preference.PreferenceManager
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
-import com.jpb.jelly.R
+import com.jpb.browser.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -329,7 +329,7 @@ class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
                     R.id.menu_shortcut -> addShortcut()
                     R.id.menu_print -> {
                         val printManager = getSystemService(PrintManager::class.java)
-                        val documentName = "Jelly document"
+                        val documentName = "jpb Browser document"
                         val printAdapter = mWebView.createPrintDocumentAdapter(documentName)
                         printManager.print(documentName, printAdapter,
                                 PrintAttributes.Builder().build())
@@ -759,7 +759,7 @@ class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
 
     companion object {
         private val TAG = MainActivity::class.java.simpleName
-        private const val PROVIDER = "com.jpb.jelly.fileprovider"
+        private const val PROVIDER = "com.jpb.browser.fileprovider"
         private const val STATE_KEY_THEME_COLOR = "theme_color"
         private const val STORAGE_PERM_REQ = 423
         private const val LOCATION_PERM_REQ = 424
