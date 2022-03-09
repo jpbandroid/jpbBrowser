@@ -20,27 +20,29 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
         android:allowBackup="true"
+        android:appCategory="productivity"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:appCategory="productivity"
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name="com.jpb.browser.MainActivity"
+            android:name=".about.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:documentLaunchMode="always"
+            android:exported="true"
             android:hardwareAccelerated="true"
             android:label="@string/app_name"
-            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
@@ -65,7 +67,7 @@
 
                 <data android:scheme="http" />
                 <data android:scheme="https" />
-                <data android:scheme="content"/>
+                <data android:scheme="content" />
                 <data android:mimeType="text/html" />
                 <data android:mimeType="text/plain" />
                 <data android:mimeType="application/xhtml+xml" />
@@ -76,19 +78,16 @@
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
         </activity>
-
         <activity
-            android:name="com.jpb.browser.history.HistoryActivity"
+            android:name=".history.HistoryActivity"
             android:label="@string/history_title"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-            android:name="com.jpb.browser.favorite.FavoriteActivity"
+            android:name=".favorite.FavoriteActivity"
             android:label="@string/favorite_title"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-            android:name="com.jpb.browser.SettingsActivity"
+            android:name=".SettingsActivity"
             android:label="@string/settings_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -101,20 +100,18 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider" />
         </provider>
-
         <provider
-            android:name="com.jpb.browser.favorite.FavoriteProvider"
+            android:name=".favorite.FavoriteProvider"
             android:authorities="com.jpb.browser.favorite"
             android:exported="false" />
-
         <provider
-            android:name="com.jpb.browser.history.HistoryProvider"
+            android:name=".history.HistoryProvider"
             android:authorities="com.jpb.browser.history"
             android:exported="false" />
 
         <meta-data
             android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="true" />
-
     </application>
+
 </manifest>
