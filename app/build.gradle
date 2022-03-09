@@ -12,6 +12,9 @@ android {
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
+        vectorDrawables {
+            useSupportLibrary true
+        }
     }
 
     buildTypes {
@@ -32,6 +35,20 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/java_studio'
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
     }
 }
 

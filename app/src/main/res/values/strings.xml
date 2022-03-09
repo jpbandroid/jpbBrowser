@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The LineageOS Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -198,4 +197,5 @@
     <string name="ssl_cert_dialog_issued_on">Issued On</string>
     <string name="ssl_cert_dialog_expires_on">Expires On</string>
     <string name="ssl_cert_dialog_dismiss">Dismiss</string>
+    <string name="title_activity_osslicense">OSSLicense</string>
 </resources>
