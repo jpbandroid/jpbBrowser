@@ -75,4 +75,9 @@
         android:icon="@drawable/ic_settings"
         android:title="@string/menu_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/ic_outline_info_24"
+        android:title="About"
+        app:showAsAction="never" />
 </menu>

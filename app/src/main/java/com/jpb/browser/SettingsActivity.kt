@@ -29,7 +29,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
 import com.jpb.browser.utils.PrefsUtils
-import com.jpb.browser.R
+
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,7 +73,7 @@ class SettingsActivity : AppCompatActivity() {
                     preference.setSummary(preference.entries[prefIndex])
                 }
             } else {
-                preference?.summary = stringValue
+                preference.summary = stringValue
             }
             return true
         }
@@ -128,6 +128,7 @@ class SettingsActivity : AppCompatActivity() {
                     .setNegativeButton(android.R.string.cancel, null)
                     .show()
         }
+
 
 
     }

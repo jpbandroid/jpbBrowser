@@ -60,6 +60,7 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
 import com.jpb.browser.R
+import com.jpb.browser.about.AboutActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -348,6 +349,7 @@ class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
                         })
                     }
                     R.id.menu_settings -> startActivity(Intent(this, SettingsActivity::class.java))
+                    R.id.menu_about -> startActivity(Intent(this, com.jpb.browser.about.AboutActivity::class.java))
                 }
                 true
             }
