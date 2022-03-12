@@ -56,6 +56,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.preference.PreferenceManager
+import com.github.javiersantos.appupdater.AppUpdater
+import com.github.javiersantos.appupdater.enums.UpdateFrom
+import com.github.javiersantos.appupdater.objects.Update
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
@@ -78,6 +81,7 @@ import com.jpb.browser.utils.UiUtils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
+
 
 class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
         SharedPreferences.OnSharedPreferenceChangeListener {
@@ -350,6 +354,10 @@ class MainActivity : WebViewExtActivity(), SearchBarController.OnCancelListener,
                     }
                     R.id.menu_settings -> startActivity(Intent(this, SettingsActivity::class.java))
                     R.id.menu_about -> startActivity(Intent(this, com.jpb.browser.about.AboutActivity::class.java))
+                    R.id.menu_update -> AppUpdater(this)
+                        .setUpdateFrom(UpdateFrom.GITHUB)
+                        .setGitHubUserAndRepo("jpbandroid", "jpbBrowser")
+                        .start()
                 }
                 true
             }

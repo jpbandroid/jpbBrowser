@@ -80,4 +80,9 @@
         android:icon="@drawable/ic_outline_info_24"
         android:title="About"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_update"
+        android:icon="@drawable/ic_fluent_arrow_sync_circle_24_regular"
+        android:title="Check for updates"
+        app:showAsAction="never" />
 </menu>
