@@ -1,11 +1,13 @@
 package com.jpb.browser.about
 
 import android.content.Intent
+import android.os.Build
 import android.view.Menu
 import android.view.MenuItem
 import com.jpb.browser.R
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.drakeet.about.*
 import com.jpb.browser.BuildConfig
 import com.jpb.browser.oss.license.OSSLicense
@@ -15,6 +17,8 @@ class AboutActivity : AbsAboutActivity() {
     override fun onCreateHeader(icon: ImageView, slogan: TextView, version: TextView) {
         icon.setImageResource(R.mipmap.ic_launcher)
         setHeaderBackground(R.color.colorAccent)
+        setHeaderContentScrim(R.color.colorAccent)
+        getWindow().setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
         slogan.text = getString(R.string.app_name)
         version.text = BuildConfig.VERSION_NAME
     }
