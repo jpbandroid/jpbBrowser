@@ -56,11 +56,11 @@
                 android:id="@+id/secure"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@id/incognito"
                 android:layout_alignWithParentIfMissing="true"
+                android:layout_toEndOf="@id/incognito"
                 android:adjustViewBounds="true"
                 android:background="?selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_lock"
+                android:src="@drawable/certificate_outline"
                 android:visibility="gone" />
 
             <com.jpb.browser.ui.AutoCompleteTextViewExt

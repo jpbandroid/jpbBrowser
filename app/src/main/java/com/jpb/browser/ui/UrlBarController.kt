@@ -36,6 +36,7 @@ class UrlBarController(
     private var mTitle: String? = null
     private var mLoading = false
     private var mUrlBarHasFocus = false
+    private var isSecure = mUrl != null && mUrl?.startsWith("https://") == true
     fun onPageLoadStarted(url: String?) {
         mUrl = url
         mLoading = true
@@ -79,8 +80,6 @@ class UrlBarController(
         val text = if (!mUrlBarHasFocus && !mLoading && mTitle != null) mTitle else mUrl
         mEditor.setTextKeepState(text ?: "")
     }
-
-    private val isSecure = mUrl != null && mUrl?.startsWith("https") == true
 
     private fun updateSSLCertificateDialog(context: Context, certificate: SslCertificate?) {
 
