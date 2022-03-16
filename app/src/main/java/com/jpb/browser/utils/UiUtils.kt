@@ -121,8 +121,8 @@ object UiUtils {
         return context.resources.getBoolean(R.bool.is_tablet)
     }
 
-    fun isReachModeEnabled(context: Context?): Boolean {
-        val prefs = context?.let { PreferenceManager.getDefaultSharedPreferences(it) }
+    fun isReachModeEnabled(context: Context): Boolean {
+        val prefs = context.let { PreferenceManager.getDefaultSharedPreferences(it) }
         return prefs!!.getBoolean("key_reach_mode", false)
     }
 
