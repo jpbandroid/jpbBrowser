@@ -15,6 +15,7 @@
  */
 package com.jpb.browser
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -133,6 +134,7 @@ internal class WebClient(private val mUrlBarController: UrlBarController) : WebV
         return false
     }
 
+    @SuppressLint("QueryPermissionsNeeded", "UnspecifiedImmutableFlag")
     private fun makeHandlerChooserIntent(context: Context, intent: Intent, url: String): Intent? {
         val pm = context.packageManager
         val activities = pm.queryIntentActivities(intent,
