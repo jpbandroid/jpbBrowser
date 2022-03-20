@@ -26,7 +26,7 @@ class AboutActivity : AbsAboutActivity() {
     override fun onItemsCreated(items: MutableList<Any>) {
         items.add(Category("About App"))
         items.add(Card("A simple web browser for Android, based on the Jelly browser from LineageOS\n" +
-                "Jelly Browser source: https://github.com/LineageOS/android_packages_apps_Jelly/tree/lineage-19.0"))
+                "Jelly Browser source: https://github.com/LineageOS/android_packages_apps_Jelly/tree/lineage-19.1"))
         items.add(Category("Developers"))
         items.add(
             Contributor(
